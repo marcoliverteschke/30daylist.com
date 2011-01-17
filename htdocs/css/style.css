@@ -93,6 +93,19 @@ body {
 	text-shadow: 1px 1px 2px #444444;
 }
 
+a:link {
+	color: #608fa0;
+}
+
+a:link {
+	color: #719fb1;
+}
+
+a:hover, a:active {
+	color: #eeeeee;
+}
+
+
 .clear {
 	clear: both;
 	float: none;
@@ -147,12 +160,24 @@ header {
 	padding: 45px 0px;
 }
 
+.rgba header {
+	background-color: rgba(0, 0, 0, 0.2);
+	margin-bottom: 27px;
+}
+
 footer {
 	color: #cccccc;
 	font-size: 12px;
-	margin-bottom: 27px;
-	margin-top: 27px;
+	margin-bottom: 45px;
+	margin-top: 45px;
 	text-align: center;
+}
+
+.coming-soon {
+	display: block;
+	font-size: 27px;
+	padding-top: 45px;
+	text-align: right;
 }
 
 .feature img {

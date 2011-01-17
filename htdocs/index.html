@@ -18,7 +18,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/style.css">
-<!--  <script src="js/libs/modernizr-1.6.min.js"></script>-->
+  <script src="/js/libs/modernizr-1.6.min.js"></script>
 
 </head>
 
@@ -28,7 +28,7 @@
     <header>
 		<div class="container">
 			<h1><span class="blue-30">30</span>daylist</h1>
-			<h2>The last impulse buy you&rsquo;ll ever make.*</h2>
+			<h2>The last impulse buy you&rsquo;ll ever make.*</h2><p class="coming-soon"><span class="blue-30">Coming soon.</span> To the iPhone.</p>
 			<div class="clear"></div>
 		</div>
     </header>
@@ -49,7 +49,7 @@
 			</div>
 			<div class="feature last">
 				<img src="/images/review.png" />
-				<h3>Review</h3>
+				<h3>Decide</h3>
 				<p>
 					30 days are up? Now it&rsquo;s time to decide.<br />
 					You've had time to make up your mind. Do you really still want that thing? Can you afford it? Heck, did you save-up for it? <span class="blue-30">30</span>daylist can open a store-URL for you of show you on a map, where exactly you saw that thing.<br />
@@ -61,7 +61,7 @@
     </div>
     <footer>
 		<div class="container">
-			&copy; <?php echo date('Y') ?> Marc-Oliver Teschke | <span class="mailto">30daylist(at)gmail.com</span>
+			&copy; <?php echo date('Y') ?> Marc-Oliver Teschke | <span class="mailto">30daylist(at)gmail.com</span> | <a href="http://twitter.com/30daylist">twitter</a>
 			
 			<p class="footnote">
 				* Not a guarantee, just a slogan. Because, you know, you still gotta actually want to not buy too much stuff. And that&rsquo;s a problem no app in the world can solve for you. Just sayin&rsquo;.
@@ -74,35 +74,18 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
   
-  
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
-  <!-- end concatenated and minified scripts-->
   
-  
-  <!--[if lt IE 7 ]>
-    <script src="js/libs/dd_belatedpng.js"></script>
-    <script> DD_belatedPNG.fix('img, .png_bg'); </script>
-  <![endif]-->
-
-  <!-- yui profiler and profileviewer - remove for production -->
-<!--  <script src="js/profiling/yahoo-profiling.min.js"></script>
-  <script src="js/profiling/config.js"></script>-->
-  <!-- end profiling code -->
-
-
   <!-- change the UA-XXXXX-X to be your site's ID -->
-<!--  <script>
-   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
-   (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.async = true;
-    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g, s);
-   })(document, 'script');
-  </script>-->
-  
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-377570-10']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>  
 </body>
 </html>
