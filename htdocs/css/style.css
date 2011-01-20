@@ -157,19 +157,24 @@ h3 {
 }
 
 header {
-	padding: 45px 0px;
+	padding: 27px 0px;
 }
 
-.rgba header {
+/*.rgba header {
 	background-color: rgba(0, 0, 0, 0.2);
 	margin-bottom: 27px;
+}*/
+
+.rgba #main {
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 45px 0;
 }
+
 
 footer {
 	color: #cccccc;
 	font-size: 12px;
-	margin-bottom: 45px;
-	margin-top: 45px;
+	margin: 27px 0;
 	text-align: center;
 }
 
