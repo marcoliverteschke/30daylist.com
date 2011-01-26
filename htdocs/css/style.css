@@ -178,11 +178,22 @@ footer {
 	text-align: center;
 }
 
-.coming-soon {
+.coming-soon, .get-it-now {
 	display: block;
 	font-size: 27px;
 	padding-top: 45px;
 	text-align: right;
+}
+
+.get-it-now a {
+	color: #eeeeee;
+	text-decoration: none;
+}
+
+.get-it-now a:hover, .get-it-now a:hover * {
+	background-color: #608fa0 !important;
+	color: #444444 !important;
+	text-shadow: none;
 }
 
 .feature img {
