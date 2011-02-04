@@ -19,7 +19,17 @@
 
   <link rel="stylesheet" href="css/style.css">
   <script src="/js/libs/modernizr-1.6.min.js"></script>
-
+  <script type="text/javascript">
+    function recordOutboundLink(link, category, action)
+    {
+      try
+      {
+        var myTracker=_gat._getTrackerByName();
+        _gaq.push(['myTracker._trackEvent', ' + category + ', ' + action + ']);
+        setTimeout('document.location = "' + link.href + '"', 100);
+      }catch(err){}
+    }
+  </script>
 </head>
 
 <body>
@@ -28,7 +38,7 @@
     <header>
 		<div class="container">
 			<h1><span class="blue-30">30</span>daylist</h1>
-			<h2>The last impulse buy you&rsquo;ll ever make.*</h2><p class="get-it-now"><a href="http://itunes.apple.com/de/app/30daylist/id415642254?mt=8" target="_blank"><span class="blue-30">Get it now.</span> From the App Store &raquo;</a></p>
+			<h2>The last impulse buy you&rsquo;ll ever make.*</h2><p class="get-it-now"><a href="http://itunes.apple.com/de/app/30daylist/id415642254?mt=8" onClick="recordOutboundLink(this, 'Outbound Links', 'example.com');return false;" target="_blank"><span class="blue-30">Get it now.</span> From the App Store &raquo;</a></p>
 			<div class="clear"></div>
 		</div>
     </header>
